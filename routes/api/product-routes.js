@@ -25,7 +25,9 @@ router.get("/:id", async (req, res) => {
     });
 
     if (!dataByProductID) {
-      res.status(400).json({ message: "No product found with that id." });
+      res
+        .status(404)
+        .json({ message: `No product found with the id ${req.params.id}` });
     }
 
     res.status(200).json(dataByProductID);
