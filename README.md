@@ -25,9 +25,15 @@ Create a .env file with the three lines shown below. Type the database name you 
 
 \*Note: make sure the database name in the db directory on the schema.sql file matches the one you used on your .env file.
 
+After creating the .env file, you're ready to roll! Open a terminal session and 'npm run mysql' then enter your password. Then type 'source db/schema.sql' to drop and create the database. Make sure to type 'exit' to end the mysql shell. Alternatively, you could copy the code in the schema.sql file into a mysql workbench.
+
+After creating the database, we need to put data into the tables. To use the pre-written data, type 'npm run seed' and pre-generated data will be inserted.
+
 ## Assets
 
-[Demo Video]()
+[Demo Video Part 1](https://drive.google.com/file/d/1J79HAS84JMJRuSxTL0i8jMq6tIvRDuTh/view?usp=sharing)
+
+[Demo Video Part 2](https://drive.google.com/file/d/1nBhZ4-Qv5R3ucFc8DRheDtMthKHhG0iV/view?usp=sharing)
 
 ## License
 
